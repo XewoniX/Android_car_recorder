@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    BSD 3-Clause License
+    Copyright (c) Viacheslav Kushnir <kushnir@mat.umk.pl>, 2023
+
+    See https://aleks-2.mat.umk.pl/pz2022/zesp10/#/project-info for see license text.
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pl.umk.mat.odyn.activities.MainScreen">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/MenuButton"
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/menu_button_desc"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/menubutton" />
+
+            <ImageButton
+                android:id="@+id/EmergencyButton"
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/emergency_record_button_desc"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/emergency3ungroup" />
+
+            <ImageButton
+                android:id="@+id/RecordButton"
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/take_video_button_desc"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/record_active" />
+
+            <ImageButton
+                android:id="@+id/PhotoButton"
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/photo_button_desc"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/photo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/latitudeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="latitudeText" />
+
+                <TextView
+                    android:id="@+id/longitudeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="longitudeText" />
+
+                <TextView
+                    android:id="@+id/speedText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="speedText" />
+
+                <TextView
+                    android:id="@+id/timerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="timerText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/counterText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/srtText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="srtText"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

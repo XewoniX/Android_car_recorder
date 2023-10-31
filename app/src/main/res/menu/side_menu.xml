@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+    zamknij menu
+    lista nagrań
+    ustawienia
+    w tle
+    zamknij apkę
+    TODO ikony
+    -->
+    <item android:id="@+id/close_menu"
+        android:title="@string/menu_close_menu"
+        android:onClick="onClickCloseMenu">
+    </item>
+    <item android:id="@+id/to_list"
+        android:title="@string/menu_open_recording_list"
+        android:onClick="onClickRecordingsList" >
+        <!--
+        zdjęcia
+        wideo
+        awaryjne
+        dane GPS
+
+        <menu>
+            <item android:id="@+id/picture_list"
+                android:title="@string/menu_gallery_pict"
+                android:onClick="onClickRecordingsList">
+            </item>
+            <item android:id="@+id/video_list"
+                android:title="@string/menu_gallery_video"
+                android:onClick="onClickRecordingsList">
+            </item>
+            <item android:id="@+id/emergency_list"
+                android:title="@string/menu_gallery_emergency"
+                android:onClick="onClickRecordingsList">
+            </item>
+            <item android:id="@+id/data_list"
+                android:title="@string/menu_explore_srt"
+                android:onClick="onClickRecordingsList">
+            </item>
+        </menu>
+        -->
+    </item>
+    <item android:id="@+id/to_settings"
+        android:title="@string/menu_open_settings"
+        android:onClick="onClickSettings">
+    </item>
+    <item android:id="@+id/background"
+        android:title="@string/menu_record_in_background"
+        android:onClick="onClickBackground">
+    </item>
+    <item android:id="@+id/turn_off"
+        android:title="@string/menu_close_app"
+        android:onClick="onClickTurnOff">
+    </item>
+</menu>

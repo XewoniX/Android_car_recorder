@@ -1,0 +1,60 @@
+<!--
+    BSD 3-Clause License
+    Copyright (c) Wojciech Kuźbiński <wojkuzb@mat.umk.pl>, Viacheslav Kushinir <kushnir@mat.umk.pl>, 2023
+
+    See https://aleks-2.mat.umk.pl/pz2022/zesp10/#/project-info for see license text.
+-->
+
+<resources>
+    <string name="app_name">OdynCam</string>
+
+    <!-- Opisy elementów w MainScreen, niewidoczne -->
+    <string name="menu_button_desc">open menu</string>
+    <string name="record_button_desc">record</string>
+    <string name="emergency_record_button_desc">emergency recording</string>
+    <string name="photo_button_desc">take photo</string>
+    <string name="take_video_button_desc">take video</string>
+
+    <!-- powiadomienie -->
+    <string name="notif_title">OdynCam 📹</string>
+    <string name="notif_text">Twój wiking nagrywa z ukrycia…</string>
+    <string name="goback_button_desc">go back</string>
+
+    <!-- StartActivity -->
+    <string name="start_text">OdynCam</string>
+    <string name="permission_ask">Wyraź zgodę na uprawnienia, aby aplikacja mogła działać poprawnie</string>
+
+    <!-- menu boczne -->
+    <string name="menu_close_menu">zamknij menu</string>
+    <string name="menu_open_recording_list">zapisane nagrania</string>
+    <string name="menu_open_settings">ustawienia</string>
+    <string name="menu_record_in_background">nagrywaj w tle</string>
+    <string name="menu_close_app">zamknij aplikację</string>
+
+    <!-- podmenu z nagraniami -->
+    <string name="menu_gallery_pict">zdjęcia</string>
+    <string name="menu_gallery_video">nagrania wideo</string>
+    <string name="menu_gallery_emergency">nagrania awaryjne</string>
+    <string name="menu_explore_srt">dane GPS</string>
+
+    <!-- Ustawienia przełączniki -->
+    <string name="aiSwitchDesc">Czy mierzyć odległość od pojazdu z przodu</string>
+    <string name="locationDisplaySwitchDesc">Czy wyświetlać lokalizację</string>
+    <string name="locationRecordingSwitchDesc">Czy zapisywać lokalizację</string>
+    <string name="speedDisplaySwitchDesc">Czy wyświetlać prędkość</string>
+    <string name="speedRecordingSwitchDesc">Czy zapisywać prędkość</string>
+    <string name="soundRecordingSwitchDesc">Czy nagrywać dźwięk</string>
+
+    <!-- Ustawienia spinnery -->
+    <string name="whereToSaveSwitchDesc">Lokalizacja zapisu</string><!-- karta sd / p. wewn. INACTIVE -->
+    <string name="menuPositionSpinnerDesc">Położenie menu</string> <!-- po której stronie mają być ikony i menu -->
+    <string name="recordingLengthSpinnerDesc">Długość nagrania</string>
+    <string name="maxRecordingFolderSizeSpinnerDesc">Rozmiar katalogu nagrań</string>
+    <string name="emergencyCatalogueSizeSpinnerDesc">Rozmiar katalogu nagrań awaryjnych</string>
+    <string name="accelerationSpinnerDesc">Czułość na wstrząsy przy kolizji</string>
+    <string name="minSpeedSpinnerDesc">Minimalna prędkość do wykrycia kolizji</string>
+
+    <!-- tu pojawią się nowe stringi -->
+    <string name="spinner7desc">Język, Language</string> <!-- NOT USED -->
+
+</resources>
